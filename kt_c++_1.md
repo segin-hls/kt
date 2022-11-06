@@ -11,7 +11,6 @@ int main(void) // <-entery point
    std::cout << "HelloWorld" << std::endl; // <- code 
 }
 ```
----
 
 ## Function OverLoading
 ```
