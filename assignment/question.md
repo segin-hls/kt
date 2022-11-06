@@ -1,17 +1,16 @@
- c++ program for LOG class and should use a "enum" for log-level.
+Write c++ program for LOG class and should use a "enum" for log-level.
    
 * log-level should be as following :- 
 	* INFO
-	* Warn
+	* WARN
 	* ERROR
 	* VERBOSE
 
 * when we create a object we should be able to (select the log  level)
 * default it should be set to "ERROR".
 	
-your main function should be:
+main function should be:-
 ```
-
 int main(void)
 {
    Log uartLog;
