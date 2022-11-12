@@ -34,7 +34,7 @@ output should be :-
 
 ```
 
-2, split the log class into a library  and implement a Makefile 
+2, Split the log class into a library  and implement a Makefile 
 * Makefile should contain
 	* `make debug`
 	* `make release`
