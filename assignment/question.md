@@ -42,7 +42,7 @@ output should be :-
 	* `make clean_debug`
 	* `make clean_release`
 
-* debug files should be in a folder called debug & release files should be in folder called debug .
+* debug files should be in a folder called debug & release files should be in folder called release .
 * when you type `make`  `make debug`  should get executed
 	
 			
