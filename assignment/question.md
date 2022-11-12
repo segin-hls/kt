@@ -36,11 +36,11 @@ output should be :-
 
 2, split the log class into a library  and implement a Makefile 
 * Makefile should contain
-* `make debug`
-* `make release`
-* `make clean`
-* `make clean_debug`
-* `make clean_release`
+	* `make debug`
+	* `make release`
+	* `make clean`
+	* `make clean_debug`
+	* `make clean_release`
 
 * debug files should be in a folder called debug & release files should be in folder called debug .
 * when you type `make`  `make debug`  should get executed
