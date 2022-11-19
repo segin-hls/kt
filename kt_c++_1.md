@@ -211,7 +211,6 @@ $(BINARY): $(OBJECTS)
 clean:
 	rm -rf $(BINARY) $(OBJECTS)
 ```
-```
 
 # Inheritance
 
