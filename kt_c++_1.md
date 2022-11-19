@@ -211,3 +211,124 @@ $(BINARY): $(OBJECTS)
 clean:
 	rm -rf $(BINARY) $(OBJECTS)
 ```
+```
+
+# Inheritance
+
+```
+#include <iostream>
+// #include <string>
+
+class Entity
+{
+
+private:
+    int m_posX;
+    int m_posY;
+
+public:
+
+    void move(int xa, int xy)
+    {
+        m_posX += xa;
+        m_posY += xy;
+    }
+
+    void printPos()
+    {
+        std::cout << m_posX << "   " << m_posY << std::endl;
+    }
+    Entity()
+    {
+        m_posX = 0;
+        m_posY = 0;
+    }
+    Entity(int x, int y)
+    {
+        m_posX = x;
+        m_posY = y;
+    }
+
+
+
+};
+
+class Player : public Entity
+{
+
+private:
+    std::string m_name = "Dude";
+
+public:
+
+    void setName(std::string name)
+    {
+        m_name = name;
+    }
+};
+
+int main(void)
+{
+    Entity entity;
+    entity.move(10,11);
+    entity.printPos();
+    
+    Player playerOne;
+    playerOne.move(21,22);
+    playerOne.printPos();
+
+
+    
+}
+```
+
+
+# Virtual Function
+
+```
+#include <iostream>
+#include <string>
+#include <ostream>
+class Entity
+{
+    public:
+
+       virtual std::string GetName() {return "Entity";};
+};
+
+class Player : public Entity
+{
+    private:
+        std::string m_Name;
+
+    public:
+        Player(const std::string &name)
+            : m_Name(name) {}; // <-- member initlizer List
+        std::string GetName() override {return m_Name;}
+};
+
+void PrintName(Entity *entity)
+{
+    std::cout << entity->GetName() << std::endl;
+}
+
+
+int main()
+{
+    Entity *e = new Entity();
+    // std::cout << e ->GetName() << std::endl;
+    PrintName(e);
+
+    Player *p = new Player("luffy");
+    // std::cout << p ->GetName() << std::endl;
+    PrintName(p);
+
+// if you start refering player as if it was an entity (polymorphism)
+
+    Entity * entity = p;
+    // std::cout << entity->GetName() << std::endl;
+    PrintName(p);
+}
+
+```
+
