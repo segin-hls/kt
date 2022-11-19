@@ -60,7 +60,12 @@ printArea(Shape *shape);
 ```
 and the funtion should print the area of rectange if rectange was passed as arg or the area of triangle if triangle was passed in.
 
+---
+---
+
 did you goggle the formula for area of rectange & triangle?
+
+
 `savage_level = answer ? "high":"low"`
 
 		
