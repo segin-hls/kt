@@ -48,4 +48,19 @@ output should be :-
 * when you type `make`  `make debug`  should get executed
 	
 			
+---
+Q3, write a c++ program with base `class shape` which will have 2  functoins
+* "shape()" which will take in two args 'width, height' which will be a 							setter function in the base class 			
+* "area()" which will calculate the area of the shape
+
+Then this base class will have two derived class `class rectangle` & `class triangle` which will inherit from the  `class shape` 
+and there should be function called printArea() like this
+```
+printArea(Shape *shape);
+```
+and the funtion should print the area of rectange if rectange was passed as arg or the area of triangle if triangle was passed in.
+
+did you goggle the formula for area of rectange & triangle?
+`savage_level = answer ? "high":"low"`
+
 		
